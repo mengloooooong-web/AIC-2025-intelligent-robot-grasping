@@ -1,0 +1,15 @@
+
+{
+	"model_file": "config/yolov8n_block_detect_640x640_nv12.bin",  // YOLOv8的推理模型文件
+	"task_num": 4,  // 硬件并发数（可复用）
+	"dnn_Parser": "yolov8",  // 改为YOLOv8的模型解析器（需推理引擎支持）
+	"model_output_count": 3,  // YOLOv8也是3个特征层输出（可复用）
+	"reg_max": 16,  // YOLOv8默认reg_max=16（可复用）
+	"class_num": 1,  // 检测类别数（和你的业务一致即可）
+	"cls_names_list": "config/block.list",  // 类别文件（可复用）
+	"strides": [8, 16, 32],  // YOLOv8的下采样步长（和YOLOv5一致，可复用）
+	"score_threshold": 0.25,  // 置信度阈值（可根据YOLOv8效果调整）
+	"nms_threshold": 0.7,  // NMS阈值（YOLOv8默认0.7，可复用）
+	"nms_top_k": 300,  // NMS最大保留数（可复用）
+	"output_order": [0,1,2]  // YOLOv8特征层输出顺序（需确认模型实际输出顺序）
+}

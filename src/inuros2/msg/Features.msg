@@ -1,0 +1,10 @@
+uint32 keypointnumber
+uint32 descriptorsize
+uint32[] descriptor
+uint32[] uniqueid
+uint32[] isrightimage
+uint32[] patternzise
+uint32[] confidence
+float32[] x
+float32[] y
+float32[] angle

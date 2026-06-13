@@ -1,0 +1,9 @@
+# request
+int32 target_count
+float64 detection_timeout
+
+---
+
+# response
+bool success
+string message

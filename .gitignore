@@ -1,0 +1,40 @@
+# Build artifacts
+install/
+log/
+build/
+config/
+
+# Source code (negate to include src)
+!src/**
+!chat_interactive.py
+!llama_readme.txt
+!REDME.md
+!README.md
+
+# Python
+__pycache__/
+**.pyc
+*.pyo
+*.egg-info/
+
+# Archives
+*.tar.gz
+*.zip
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled libraries
+*.so
+*.a
+*.o
+
+# Model files (too large for GitHub, download separately)
+*.gguf
+*.bin
+*.pt

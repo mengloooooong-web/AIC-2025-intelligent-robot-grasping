@@ -1,0 +1,3 @@
+可以把SDK包放入脚本inuInstall.sh同级目录进行安装，执行inuInstall.sh后进行安装，脚本使用详见包内README。
+
+https://www.123684.com/s/SLPuVv-yuNp3?提取码:nLdD

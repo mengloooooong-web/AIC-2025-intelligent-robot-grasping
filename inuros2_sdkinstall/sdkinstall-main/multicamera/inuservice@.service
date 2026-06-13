@@ -1,0 +1,20 @@
+[Unit]
+Description=Inuitive Service %i
+After=syslog.target
+Documentation=http://inuitive-tech.com/
+
+[Service]
+Type=forking
+ExecStart=/opt/Inuitive/InuDev/bin/inuservicemulti.sh start %i
+ExecStop=/opt/Inuitive/InuDev/bin/inuservicemulti.sh stop %i
+#StandardOutput=null
+Restart=always
+KillMode=control-group
+RestartPreventExitStatus=255
+WorkingDirectory=/opt/Inuitive/InuDev/bin
+LimitCORE=16G:16G
+
+
+[Install]
+WantedBy=multi-user.target
+Alias=inuservice%i.service
